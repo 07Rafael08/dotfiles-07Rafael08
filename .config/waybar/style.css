@@ -1,0 +1,104 @@
+/*  All  */
+*{
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 16px;
+}
+
+#audio,
+#custom-launcher,
+#clock,
+#battery {
+  background-color: #171825;
+  color: #B5BDFD;
+  font-weight: 900;
+  padding: 0px 20px;
+  border-radius: 20px;
+  margin: 0px 8px;
+}
+
+
+
+/*  Tooltip  */
+tooltip * {
+  box-shadow: 0 0 8px #171825;
+  background-color: #171825;
+  text-shadow: none;
+  color: #B5BDFD;
+  padding: 1px 4px;
+}
+
+
+
+/*  Distro  */
+#custom-launcher{
+  font-size: 26px;
+  padding: 0 20px;
+}
+
+
+
+/*  Workspaces  */
+#workspaces {
+  padding: 6px;
+  background: #171825;
+  color: #313243;
+  border-radius: 50px;
+  margin: 0 8px;
+}
+
+#workspaces button{
+  padding: 0px 7px;
+  border-radius: 12px;
+  background-color: #313243;
+  color: #313243;
+  font-weight: 900;
+  margin: 0 3px;
+  transition: 0.2s;
+}
+
+#workspaces button:hover {
+  background: #313243;
+  border: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#workspaces button.active{
+  color: #313243;
+  background-color: #B5BDFD;
+  padding: 0 20px;
+}
+
+#workspaces button.empty{
+  color: #313243;
+}
+
+
+
+/*  Bateria  */
+#battery.name, #battery.icon{
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+#battery.icon.charging{
+  color: #B5BDFD;
+}
+
+#battery.good{
+  color: #7ff77f;
+}
+
+#battery.warning{
+  color: #ffff9a;
+}
+
+#battery.critical{
+  color: #ff4949;
+}

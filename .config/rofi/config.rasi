@@ -1,0 +1,76 @@
+configuration {
+    display-drun: "Apps: ";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font Mono";
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+    bg: #171825;
+    brd: #B5BDFD;
+
+    background-color: @bg;
+    text-color: #B5BDFD;
+    font: "JetBrains Mono 13";
+}
+
+window {
+    width: 25%;
+    height: 48%;
+    background-color: @bg;
+    padding: 28px;
+    border: 3;
+    border-color: @brd;
+    border-radius: 8;
+}
+
+mainbox {
+    orientation: vertical;
+    spacing: 20;
+    
+}
+
+inputbar {
+    background-color: @bg;
+    border: 2;
+    border-color: @brd;
+    padding: 10;
+    border-radius: 8;
+}
+
+listview {
+    background-color: @bg;
+    columns: 1;
+    lines: 6;
+    spacing: 0;
+    scrollbar: true;
+    fixed-height: true;
+    dynamic: false;
+    margin: 0 0 0 8;
+}
+
+element {
+    orientation: horizontal;
+    background-color: @bg;
+    padding: 8;
+}
+
+element selected {
+    border: 2;
+    border-color: @brd;
+    border-radius: 8;
+}
+
+element-icon {
+  size: 28;
+  padding: 3;
+  vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+}

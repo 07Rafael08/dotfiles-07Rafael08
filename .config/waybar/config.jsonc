@@ -1,0 +1,106 @@
+{
+  // Style //
+  "position": "top",
+  "layer": "bottom",
+  "margin": "10px 0 0 0",
+
+
+  // Modules //
+  "modules-left": ["custom/launcher", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["group/audio", "group/battery"],
+
+
+  // Relogio //
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:%a, %d/%m/%Y}"
+  },
+
+
+  // Bateria //
+  "battery#name": {
+    "format": " {capacity}%",
+    "tooltip": true,
+    "tooltip-format": "Tempo até esvaziar/encher: {time}",
+    "interval": 1
+  },
+  "battery#icon": {
+    "format": "<span font='22'>{icon}</span>",
+    "format-icons": {
+      "default": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+      "charging": ["\ueea1"]
+    },
+    "states": {
+      "good": 100,
+      "warning": 20,
+      "critical": 10
+    },
+    "interval": 1
+    
+  },
+  "group/battery": {
+    "orientation": "horizontal",
+    "interval": 1,
+    "modules": [
+      "battery#icon",
+      "battery#name"
+    ]
+  },
+
+  // Workspaces //
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "on-click": "activate",
+    "sort-by-number": true,
+    "persistent-workspaces":
+    {
+      "*": 5
+    }
+  },
+
+  // Distro //
+  "custom/launcher": {
+    "format": "\uf303",
+    "tooltip": false
+  },
+
+  // Audios //
+  "pulseaudio#icon": 
+  {
+		"format": "<span font='22'>{icon}</span>",
+    "format-muted": "<span font='22'>\ueee8</span>",
+
+		"format-icons": 
+    {
+			"default": ["\uf026", "\uf027", "\uf028"],
+      "muted": ["\ueee8"]
+		},
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  "pulseaudio#volume": 
+  {
+		"format": " {volume}%",
+    "format-muted": " Muto",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "max-volume": 100,
+    "tooltip": false
+  },
+  "group/audio": 
+  {
+    "orientation": "horizontal",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-",
+    "modules":
+    [
+      "pulseaudio#icon",
+      "pulseaudio#volume"
+    ]
+  }
+
+}

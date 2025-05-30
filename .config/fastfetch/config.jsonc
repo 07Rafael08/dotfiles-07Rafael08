@@ -1,0 +1,100 @@
+//      {
+//          "": ,
+//          "": ,
+//          "":
+//      },
+
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "/home/rafalinux/Downloads/arch.gif",
+        "type": "kitty-icat",
+        "height": 15,
+        "width": 23,
+        "padding": {
+            "top": 4,
+            "left": 0
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "format": "                         {user-name-colored}"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────── Info System ──────────────────────┐"
+        },
+        "break",
+        {
+            "type": "host",
+            "key": "    \uf109  PC",
+            "keyColor": "#FFB5B5"
+        },
+        {
+            "type": "os",
+            "key": "    \uf303  Distro",
+            "keyColor": "#FFCBA5" 
+        },
+        {
+            "type": "cpu",
+            "key": "    \uf4bc  CPU",
+            "keyColor": "#FFF4B5"
+        },
+        {
+            "type": "gpu",
+            "key": "    \uf4bc  GPU",
+            "keyColor": "#D1FFB5"
+        },
+        {
+            "type": "memory",
+            "key": "    \uefc5  Ram",
+            "keyColor": "#B5FFD9"
+        },
+        {
+            "type": "disk",
+            "key": "    \uf0c7  Disco",
+            "keyColor": "#B5F3FF"
+        },
+        {
+            "type": "terminal",
+            "key": "    \uea85  Terminal",
+            "keyColor": "#B5BDFD"
+        },
+        {
+            "type": "shell",
+            "key": "    \uea85  Shell",
+            "keyColor": "#CBB5FF"
+        },
+        {
+            "type": "packages",
+            "key": "    \ueb29  Pacotes",
+            "keyColor": "#E8B5FF"
+        },
+        {
+            "type": "uptime",
+            "key": "    \ue385  Tempo de atividade",
+            "keyColor": "#FFB5E3"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+        },
+
+//        {
+//            "type": "colors"
+//        },
+
+        {
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        },
+        "break"
+    ]
+}
+
