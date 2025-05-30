@@ -2,7 +2,7 @@
   <h1> <img src="https://wiki.hyprland.org/favicon.svg" width=20 />  Rice Hyprland <b>07Rafael08</b></h1>
 </div>
 
-**Video:** https://youtu.be/hfd-Y6Jf350
+**Video:** https://youtu.be/Pno3VDHIaMc
 
 ![image exemple](./Imagem.png)
 
