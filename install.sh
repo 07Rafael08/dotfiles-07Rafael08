@@ -163,24 +163,31 @@ echo "  Começar instalação dos pacotes para o interface...  "
 echo "------------------------------------------------------"
 echo ""
 
-sudo pacman -S hyprlock hyprpaper hypridle hypr dunst fastfetch zsh waybar discord neovim wlogout rofi ttf-jetbrains-mono ttf-jetbrains-mono-nerd grim slurp hyprpicker firefox nautilus git
+sudo pacman -S hyprlock hyprpaper hypridle dunst fastfetch zsh waybar discord neovim rofi ttf-jetbrains-mono ttf-jetbrains-mono-nerd grim slurp hyprpicker firefox nautilus git zsh-autosuggestions zsh-syntax-highlighting
+yay -S wlogout
+sleep 3
 
 echo "  Configurando o interface...  "
 echo "-------------------------------"
 echo ""
 
-cp ./.config/hypr/* ~/.config/hypr/
+cp ~/dotfiles-07Rafael08/.config/hypr/* ~/.config/hypr/
 
 mkdir ~/.config/waybar
-cp ./.config/waybar/* ~/.config/waybar/
+cp ~/dotfiles-07Rafael08/.config/waybar/* ~/.config/waybar/
 
 mkdir ~/.config/rofi
-cp ./.config/rofi/* ~/.config/rofi/
+cp ~/dotfiles-07Rafael08/.config/rofi/* ~/.config/rofi/
 
 mkdir ~/.config/fastfetch
-cp ./.config/fastfetch/* ~/.config/fastfetch/
+cp ~/dotfiles-07Rafael08/.config/fastfetch/* ~/.config/fastfetch/
 
+mkdir ~/.config/kitty
+cp ~/dotfiles-07Rafael08/.config/kitty/* ~/.config/kitty/
 
+cp -r ~/dotfiles-07Rafael08/Wallpapers ~/ 
+
+cp ~/dotfiles-07Rafael08/.zshrc ~/
 
 
 
