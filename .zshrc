@@ -26,4 +26,4 @@ compinit
 sleep 1.5
 fastfetch
 
-eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/custom_config.omp.json)"
+#eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/custom_config.omp.json)"
