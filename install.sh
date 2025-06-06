@@ -163,7 +163,7 @@ echo "  Começar instalação dos pacotes para o interface...  "
 echo "------------------------------------------------------"
 echo ""
 
-sudo pacman -S hyprlock hyprpaper hypridle dunst fastfetch zsh waybar discord neovim rofi ttf-jetbrains-mono ttf-jetbrains-mono-nerd grim slurp hyprpicker firefox nautilus git zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S brightnessctl hyprlock hyprpaper hypridle dunst fastfetch zsh waybar discord neovim rofi ttf-jetbrains-mono ttf-jetbrains-mono-nerd grim slurp hyprpicker firefox nautilus git zsh-autosuggestions zsh-syntax-highlighting
 yay -S wlogout
 sleep 3
 
